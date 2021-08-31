@@ -1,0 +1,30 @@
+@import "src/styles/defaults";
+
+.wrapper {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 $container-gap;
+
+  .logo_black {
+    width: 90px;
+    height: 20px;
+  }
+
+  .links {
+    margin-right: -24px;
+
+    a {
+      padding: 24px;
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 12px;
+
+      &:hover {
+        background: #e8e8e8;
+        color: $hover-color;
+      }
+    }
+  }
+}

@@ -1,9 +1,12 @@
 import React from 'react';
-import './styles/style.scss'
+import './styles/defaults.scss'
+import Header from "./components/header/Header";
+import Panel from "./components/panel/Panel";
 
 const App = () => (
     <div>
-        <h1>Hello React</h1>
+        <Header/>
+        <Panel/>
     </div>
 );
 
