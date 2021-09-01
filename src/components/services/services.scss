@@ -1,0 +1,20 @@
+@import "src/styles/defaults";
+
+.root {
+  margin: 0 $container-gap;
+
+  .header {
+    .section_name {
+      font-family: "Open Sans";
+      font-weight: bold;
+      color: $gray_font_color;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 2.30625px;
+    }s
+    .band{
+      @extend %band;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 @import "src/styles/defaults";
 
-$about-color: #48555B;
 $text_width: 405px;
 $letter-spacing: 0.19px;
-%open-sans-pattern{
+%open-sans-pattern {
   font-family: "Open Sans";
 }
 
@@ -17,13 +16,11 @@ $letter-spacing: 0.19px;
       text-align: center;
       font-family: "Open Sans";
       font-weight: 700;
-      color: $about-color;
+      color: $gray_font_color;
     }
 
     .band {
-      height: 2px;
-      width: 50px;
-      background-color: $hover-color;
+      @extend %band;
       margin: 10px auto 0;
     }
   }
@@ -35,7 +32,7 @@ $letter-spacing: 0.19px;
 
     .text {
       font-family: "Open Sans";
-      color: $about-color;
+      color: $gray_font_color;
       width: $text_width;
 
       .header {
@@ -82,7 +79,7 @@ $letter-spacing: 0.19px;
           font-family: "Open Sans";
           font-weight: 800;
           font-size: 24px;
-          color: $font_color_white;
+          color: $white_font_color;
         }
       }
 

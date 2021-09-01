@@ -3,7 +3,14 @@
 
 $container-gap: 368px;
 $hover-color: #00A4E5;
-$font_color_white: white;
+$white_font_color: white;
+$gray_font_color: #48555B;
+
+%band{
+  height: 2px;
+  width: 50px;
+  background-color: $hover-color;
+}
 
 html,
 body {

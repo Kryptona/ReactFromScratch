@@ -26,7 +26,7 @@ const About = () => {
                 </div>
                 <div className={styles.images}>
                     <div className={styles.image}>
-                        <img src={deliver} alt="deliver"/>
+                        <img src={plan} alt="deliver"/>
                         <div className={styles.name}>
                             WE <br/>PLAN
                         </div>
@@ -38,7 +38,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className={styles.image}>
-                        <img src={plan} alt="plan"/>
+                        <img src={deliver} alt="plan"/>
                         <div className={styles.name}>
                             WE <br/>BUILD
                         </div>
