@@ -4,9 +4,23 @@
 $container-gap: 368px;
 $hover-color: #00A4E5;
 $white_font_color: white;
+$white-btn-txt-color: white;
+$blue-btn-bg: #00A4E5;
 $gray_font_color: #48555B;
+$container-max-width: 940px;
 
-%band{
+%open-sans-700-grey {
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: $gray_font_color;
+}
+%open-sans-400-grey {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: $gray_font_color;
+}
+
+%band {
   height: 2px;
   width: 50px;
   background-color: $hover-color;

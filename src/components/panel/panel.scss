@@ -1,30 +1,36 @@
 @import "src/styles/defaults";
 
-.wrapper {
+.root {
   height: 65px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 $container-gap;
   border-bottom: 1px solid #E6E6E6;
 
-  .logo_black {
-    width: 90px;
-    height: 20px;
-  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
 
-  .links {
-    margin-right: -24px;
+    .logo_black {
+      width: 90px;
+      height: 20px;
+    }
 
-    a {
-      padding: 24px;
-      font-family: "Open Sans";
-      font-weight: 600;
-      font-size: 12px;
+    .links {
+      margin-right: -24px;
 
-      &:hover {
-        background: #e8e8e8;
-        color: $hover-color;
+      a {
+        color: $gray_font_color;
+        padding: 24px;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 12px;
+
+        &:hover {
+          background: #e8e8e8;
+          color: $hover-color;
+        }
       }
     }
   }

@@ -4,14 +4,16 @@ import logoBlack from '../../img/logo_black.svg';
 
 const Panel = () => {
     return (
-        <div className={styles.wrapper}>
-            <img className={styles.logo_black} src={logoBlack} alt={"logo"}></img>
-            <div className={styles.links}>
-                <a>HOME</a>
-                <a>ABOUT</a>
-                <a>SERVICES</a>
-                <a>WORK</a>
-                <a>CONTACT</a>
+        <div className={styles.root}>
+            <div className={styles.container}>
+                <img className={styles.logo_black} src={logoBlack} alt={"logo"}></img>
+                <div className={styles.links}>
+                    <a>HOME</a>
+                    <a>ABOUT</a>
+                    <a>SERVICES</a>
+                    <a>WORK</a>
+                    <a>CONTACT</a>
+                </div>
             </div>
         </div>
     );

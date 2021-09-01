@@ -1,0 +1,24 @@
+@import "../../styles/defaults";
+
+.root {
+  width: 150px;
+  height: 40px;
+
+  .bt {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    color: $white-btn-txt-color;
+    background-color: $blue-btn-bg;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: darken($blue-btn-bg, 10%);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "src/styles/defaults";
+
+$border-color: #E6E6E6;
+
+.root {
+  border: 1px solid $border-color;
+  width: 295px;
+  height: 330px;
+
+  .container {
+    padding: 23px;
+
+    .title {
+      @extend %open-sans-700-grey;
+      margin: 25px 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .desc{
+      @extend %open-sans-400-grey;
+      font-size: 13px;
+      line-height: 23px;
+      letter-spacing: 0.1875px;
+    }
+  }
+}

@@ -7,7 +7,8 @@ $letter-spacing: 0.19px;
 }
 
 .root {
-  margin: 20px $container-gap;
+  max-width: $container-max-width;
+  margin: 20px auto;
 
   .header {
 
@@ -56,13 +57,14 @@ $letter-spacing: 0.19px;
     }
 
     .images {
-      margin-right: -40px;
+      margin-right: -20px;
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
 
       .image {
         position: relative;
-        margin: 0 20px;
+        margin: 0 10px;
 
         img {
           height: 224px;

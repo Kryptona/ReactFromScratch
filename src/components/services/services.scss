@@ -1,20 +1,43 @@
 @import "src/styles/defaults";
 
 .root {
-  margin: 0 $container-gap;
+  max-width: $container-max-width;
+  margin: 120px auto;
 
   .header {
+    display: flex;
+    justify-content: space-between;
+
     .section_name {
-      font-family: "Open Sans";
-      font-weight: bold;
-      color: $gray_font_color;
+      @extend %open-sans-700-grey;
       font-size: 18px;
       line-height: 25px;
       letter-spacing: 2.30625px;
-    }s
-    .band{
+    }
+
+    .band {
       @extend %band;
       margin-top: 10px;
     }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .desc {
+        @extend %open-sans-400-grey;
+        width: 405px;
+        font-size: 11px;
+        line-height: 19px;
+        letter-spacing: 0.2px;
+        margin-right: 32px;
+      }
+    }
+  }
+
+  .card_container{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
