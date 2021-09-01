@@ -5,7 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 $container-gap;
+  padding: 0 $container-gap;
+  border-bottom: 1px solid #E6E6E6;
 
   .logo_black {
     width: 90px;

@@ -1,5 +1,4 @@
-$font_color: white;
-
+@import "src/styles/defaults";
 
 .root {
   position: relative;
@@ -32,7 +31,7 @@ $font_color: white;
     .center_txt_wrapper {
       text-align: center;
       font-size: 60px;
-      color: $font_color;
+      color: $font_color_white;
       font-family: 'Bebas Neue';
       letter-spacing: 5.70937px;
     }
@@ -41,12 +40,12 @@ $font_color: white;
       font-size: 16px;
       font-family: 'Open Sans';
       font-weight: 600;
-      color: $font_color;
+      color: $font_color_white;
     }
 
     .scroll_down_txt {
       margin-bottom: 100px;
-      color: $font_color;
+      color: $font_color_white;
       font-family: 'Open Sans';
       font-weight: 600;
       letter-spacing: 3.7px;
