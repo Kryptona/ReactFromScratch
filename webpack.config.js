@@ -2,13 +2,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 const srcDirectory = path.resolve(__dirname, 'src');
+const distDirectory = path.resolve(__dirname, 'dist');
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.[hash].js",
-        path: path.resolve(__dirname, "dist"),
+        path: distDirectory,
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -50,7 +52,7 @@ module.exports = {
                                 includePaths: [srcDirectory],
                             },
                         },
-                    },
+                    }
                 ],
             },
             {
@@ -59,6 +61,9 @@ module.exports = {
                     loader: 'url-loader',
                     options: {
                         limit: 10000000,
+                        name: '[path][name].[ext]',
+                        context: srcDirectory,
+                        outputPath: distDirectory,
                     }
                 }],
             },

@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Panel from "./components/panel/Panel";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => (
     <div>
@@ -11,6 +12,7 @@ const App = () => (
         <Panel/>
         <About/>
         <Services/>
+        <Navbar/>
     </div>
 );
 
