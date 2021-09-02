@@ -1,0 +1,26 @@
+@import "src/styles/defaults";
+
+$background-color: #171819;
+
+.root {
+  width: 100vw;
+  height: 100px;
+  background-color: $background-color;
+  margin-top: -5px;
+
+  .links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 35px;
+
+    .signup_txt {
+      font-family: Open Sans;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.846154px;
+      color: $white_font_color;
+      margin-right: 70px;
+    }
+  }
+}

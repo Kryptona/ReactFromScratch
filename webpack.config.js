@@ -2,9 +2,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 const srcDirectory = path.resolve(__dirname, 'src');
+const imgDirectory = path.resolve(srcDirectory, 'img');
 const distDirectory = path.resolve(__dirname, 'dist');
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.tsx",
@@ -19,6 +21,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: imgDirectory, to: distDirectory },
+            ],
         }),
     ],
     resolve: {
@@ -58,7 +65,7 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
                 use: [{
-                    loader: 'url-loader',
+                    loader: 'file-loader',
                     options: {
                         limit: 10000000,
                         name: '[path][name].[ext]',
@@ -66,6 +73,7 @@ module.exports = {
                         outputPath: distDirectory,
                     }
                 }],
+
             },
         ],
     },

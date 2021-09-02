@@ -5,10 +5,10 @@ import Button from "../../UI/button/Button";
 
 const Navbar = () => {
     return (
-        <div className={styles.root}>
+        <div className={styles.root} style={{backgroundImage: `url(/navbar_bg.png)`}}>
             <div className={styles.container}>
-                <img className={styles.bg} src={navbar_bg}/>
-                <div className={styles.content}>
+                {/*<img className={styles.bg} src={navbar_bg}/>*/}
+                <div className={styles.content} >
                     <div className={styles.title}>
                         Want to build <br/> something amazing?
                     </div>

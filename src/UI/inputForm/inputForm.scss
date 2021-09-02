@@ -1,0 +1,17 @@
+@import "../../styles/defaults.scss";
+
+.root {
+
+  .container {
+    display: flex;
+
+    input {
+      width: 250px;
+      height: 40px;
+      //border: none;
+      outline: $blue-btn-bg;
+      @extend %open-sans-400-grey;
+    }
+
+  }
+}

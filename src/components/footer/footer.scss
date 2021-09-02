@@ -1,0 +1,23 @@
+@import "src/styles/defaults";
+
+$bg: #141A20;
+
+.root {
+  height: 240px;
+  background-color: $bg;
+
+  .content {
+    width: $container-gap;
+
+    .containerLinks {
+      .links {
+        display: flex;
+        width: 276px;
+        justify-content: space-between;
+      }
+    }
+
+
+  }
+
+}

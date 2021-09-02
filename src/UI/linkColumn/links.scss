@@ -1,0 +1,18 @@
+@import "src/styles/defaults";
+
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+
+  .link {
+
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: $white_font_color;
+  }
+
+}

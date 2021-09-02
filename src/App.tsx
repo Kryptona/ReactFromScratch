@@ -5,6 +5,8 @@ import Panel from "./components/panel/Panel";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
 import Navbar from "./components/navbar/Navbar";
+import Newsletter from "./components/newsletter/Newsletter";
+import Footer from "./components/footer/Footer";
 
 const App = () => (
     <div>
@@ -13,6 +15,8 @@ const App = () => (
         <About/>
         <Services/>
         <Navbar/>
+        <Newsletter/>
+        <Footer/>
     </div>
 );
 
