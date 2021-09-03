@@ -75,11 +75,10 @@ $bg: #141A20;
     }
 
     .logoLinks{
-      img{
-        margin: 15px;
-        width: 13px;
-        height: 13px;
-      }
+      width: 85px;
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0 45px 0;
     }
   }
 

@@ -2,10 +2,9 @@ import React from 'react';
 import styles from './footer.scss';
 import LinkColumn from "../../UI/linkColumn/LinkColumn";
 import logo from '../../img/logo.png';
-import twitter from "../../img/twitter_logo.png";
-import facebook from "../../img/facebook_logo.png";
-import google from "../../img/google_logo.png";
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faFacebookSquare, faGoogle, faTwitter} from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     return (
@@ -14,7 +13,8 @@ const Footer = () => {
                 <div className={styles.containerCompany}>
                     <span className={styles.header}>COMPANY</span>
                     <img src={logo}/>
-                    <div className={styles.descFooter}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    <div className={styles.descFooter}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                        diam
                         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
                     </div>
                 </div>
@@ -40,9 +40,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={styles.logoLinks}>
-                    {/*<img src={facebook}/>*/}
-                    {/*<img src={twitter}/>*/}
-                    <img src={google}/>
+                    <FontAwesomeIcon icon={faFacebookSquare} style={{color: "white"}}/>
+                    <FontAwesomeIcon icon={faTwitter} style={{color: "white"}}/>
+                    <FontAwesomeIcon icon={faGoogle} style={{color: "white"}}/>
                 </div>
             </div>
         </div>
