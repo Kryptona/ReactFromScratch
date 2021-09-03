@@ -1,5 +1,6 @@
 @import "src/styles/defaults";
 
+$panel-color: #171819;
 $bg: #141A20;
 
 %header {
@@ -12,7 +13,6 @@ $bg: #141A20;
 }
 
 .root {
-  height: 240px;
   background-color: $bg;
 
   .content {
@@ -30,7 +30,7 @@ $bg: #141A20;
         margin-bottom: 20px;
       }
 
-      img{
+      img {
         margin: 20px 0;
       }
 
@@ -74,7 +74,7 @@ $bg: #141A20;
       }
     }
 
-    .logoLinks{
+    .logoLinks {
       width: 85px;
       display: flex;
       justify-content: space-between;
@@ -82,4 +82,24 @@ $bg: #141A20;
     }
   }
 
+  .footerPanel {
+    height: 75px;
+    background-color: $panel-color;
+
+    .contentFP {
+      max-width: $container-max-width;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+
+      padding-top: 20px;
+      font-family: "Open Sans";
+      color: $white_font_color;
+      font-size: 11px;
+      line-height: 15px;
+      letter-spacing: 0.846154px;
+
+    }
+
+  }
 }

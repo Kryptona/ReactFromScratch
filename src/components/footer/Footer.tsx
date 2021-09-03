@@ -6,6 +6,7 @@ import logo from '../../img/logo.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebookSquare, faGoogle, faTwitter} from '@fortawesome/free-brands-svg-icons'
 
+//todo запретить горизонтальный скролл
 const Footer = () => {
     return (
         <div className={styles.root}>
@@ -43,6 +44,13 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faFacebookSquare} style={{color: "white"}}/>
                     <FontAwesomeIcon icon={faTwitter} style={{color: "white"}}/>
                     <FontAwesomeIcon icon={faGoogle} style={{color: "white"}}/>
+                </div>
+            </div>
+            <div className={styles.footerPanel}>
+                <div className={styles.contentFP}>
+                    <div>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo
+                        <br/> © 2021 Page layout by https://github.com/Kryptona
+                    </div>
                 </div>
             </div>
         </div>
