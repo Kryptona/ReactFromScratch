@@ -2,22 +2,85 @@
 
 $bg: #141A20;
 
+%header {
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.846154px;
+  color: $white_font_color;
+  margin-bottom: 10px;
+}
+
 .root {
   height: 240px;
   background-color: $bg;
 
   .content {
-    width: $container-gap;
+    display: flex;
+    justify-content: space-between;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 40px;
+
+    .containerCompany {
+      width: 250px;
+
+      .header {
+        @extend %header;
+        margin-bottom: 20px;
+      }
+
+      img{
+        margin: 20px 0;
+      }
+
+      .descFooter {
+        font-family: Open Sans;
+        letter-spacing: 0.85px;
+        font-size: 11px;
+        line-height: 19px;
+        color: $white_font_color;
+      }
+    }
 
     .containerLinks {
+
+      .header {
+        @extend %header;
+      }
+
       .links {
+        margin-top: 10px;
         display: flex;
         width: 276px;
         justify-content: space-between;
       }
     }
 
+    .containerContactUs {
+      width: 140px;
 
+      .header {
+        @extend %header;
+      }
+
+      .descContact {
+        margin-top: 15px;
+        font-family: Open Sans;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.846154px;
+        color: $white_font_color;
+      }
+    }
+
+    .logoLinks{
+      img{
+        margin: 15px;
+        width: 13px;
+        height: 13px;
+      }
+    }
   }
 
 }
