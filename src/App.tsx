@@ -7,9 +7,10 @@ import Services from "./components/services/Services";
 import Navbar from "./components/navbar/Navbar";
 import Newsletter from "./components/newsletter/Newsletter";
 import Footer from "./components/footer/Footer";
+import styles from './styles/defaults.scss'
 
 const App = () => (
-    <div>
+    <div className={styles.root}>
         <Header/>
         <Panel/>
         <About/>

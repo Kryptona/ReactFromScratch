@@ -14,6 +14,7 @@ $container-max-width: 940px;
   font-weight: 700;
   color: $gray_font_color;
 }
+
 %open-sans-400-grey {
   font-family: "Open Sans";
   font-weight: 400;
@@ -29,6 +30,10 @@ $container-max-width: 940px;
 html,
 body {
   margin: 0;
+}
+
+.root {
+  overflow-x: hidden;
 }
 
 
